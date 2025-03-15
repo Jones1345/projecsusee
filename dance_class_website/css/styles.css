@@ -1,0 +1,852 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffff0;
+    color: #000000;
+}
+
+/* Navbar */
+.navbar {
+    background-color:  #826644;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('../images/dance-banner.jpg') center/cover no-repeat;
+    color: #826644;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #826644;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff5733;
+    color: #fffff0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #ff4500;
+}
+
+/* Offers Section */
+.offers {
+    text-align: center;
+    padding: 50px 20px;
+    color: #683e14;
+}
+
+.package-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.package {
+    background: #D2B48C;
+    width: 300px;
+    text-align: center;
+    color: #000000;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.package img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color:  #58340f;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 30px;
+    background:  #fffff0;
+    color: #683e14;
+}
+
+.contact h1, .contact h2 {
+    color: #826644;
+}
+/* Footer */
+footer {
+    background-color: #826644;
+    color: #fffff0;
+    text-align: center;
+    padding: 10px;
+}
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fffff0;
+    color:rgb(0, 0, 0);
+}
+
+.about h1, .about h2 {
+    color: #826644;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
+    color: white;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Instructor Section */
+.instructors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.instructor {
+    background: #D2B48C;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 250px;
+}
+
+.instructor img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.instructor h3 {
+    margin: 10px 0;
+    color: #826644;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fffff0;
+   
+}
+
+.contact h1, .contact h2 {
+    color: #683e14;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-form, .contact-details {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff4500;
+}
+
+/* Success & Error Messages */
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Google Maps */
+.contact-details iframe {
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form, .contact-details {
+        max-width: 100%;
+    }
+}
+/* Login Section */
+.login {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.login h1 {
+    color: #683e14;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login button {
+    background-color:  #683e14;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #683e14;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+/* Register Section */
+.register {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.register h1 {
+    color: #683e14 ;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.register button:hover {
+    background-color: #ff4500;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+/* Feedback Section */
+.feedback {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.feedback h1 {
+    color: #683e14;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.feedback button:hover {
+    background-color:#58330d;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+/* Change Password Section */
+.change-password {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.change-password h1 {
+    color: #683e14;
+}
+
+.change-password form {
+    display: flex;
+    flex-direction: column;
+}
+
+.change-password input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.change-password button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.change-password button:hover {
+    background-color: #ff4500;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+/* Dashboard Section */
+.dashboard {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.dashboard h1 {
+    color: #683e14;
+}
+
+.dashboard p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.dashboard a {
+    display: block;
+    background-color:#683e14;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #58340f;
+    unicode-bidi: isolate;
+}
+
+.dashboard a:hover {
+    background-color:#683e14;
+}
+/* Manage Packages Section */
+.manage-packages {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.manage-packages h1 {
+    color: #683e14;
+}
+
+.manage-packages form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.manage-packages input, .manage-packages textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.manage-packages button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.manage-packages button:hover {
+    background-color: #ff4500;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+table th {
+    background-color:  #683e14;
+    color: white;
+}
+
+table td a {
+    text-decoration: none;
+    color: red;
+    margin-right: 10px;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+/* View Users Section */
+.view-users {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.view-users h1 {
+    color: #5a189a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+table th {
+    background-color:  #683e14;
+    color: white;
+}
+
+table td a {
+    text-decoration: none;
+    color: red;
+    margin-right: 10px;
+}
+/* View Feedback Section */
+.view-feedback {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.view-feedback h1 {
+    color: #683e14;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #683e14;
+    text-align: center;
+}
+
+table th {
+    background-color: #683e14;
+    color: white;
+}
+
+table td {
+    word-wrap: break-word;
+}
+/* Navbar Styles */
+.navbar {
+    background:#683e14;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #683e14;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Dashboard Styles */
+.dashboard-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.dashboard-card {
+    background: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard-card h3 {
+    font-size: 1.5em;
+    color: #5a189a;
+}
+
+.dashboard-card p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.dashboard-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #5a189a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.dashboard-card a:hover {
+    background: #3b0a45;
+}
+
+/* Quick Actions */
+.admin-options {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-options h3 {
+    font-size: 1.5em;
+    color: #5a189a;
+}
+
+.admin-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-options ul li {
+    margin: 10px 0;
+}
+
+.admin-options ul li a {
+    text-decoration: none;
+    color: #5a189a;
+    font-size: 1.2em;
+}
+
+.admin-options ul li a:hover {
+    text-decoration: underline;
+}
+/* Edit Package Form Styles */
+.edit-package-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-package-container h1 {
+    text-align: center;
+    color: #5a189a;
+}
+
+.edit-package-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-package-container label {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.edit-package-container input,
+.edit-package-container textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-package-container button {
+    padding: 12px;
+    background-color: #5a189a;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-package-container button:hover {
+    background-color: #3b0a45;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Centered Container */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-s
+

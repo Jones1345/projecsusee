@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0099)http://172.16.123.2/phpmyadmin/navigation.php?db=dance_class&token=f704935c31e690bec9852d57766d3a79 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://172.16.123.2/phpmyadmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://172.16.123.2/phpmyadmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    
+    <!--<base target="frame_content">--><base href="." target="frame_content">
+    <link rel="stylesheet" type="text/css" href="./phpmyadmin.css.php">
+    <script type="text/javascript" src="./navigation.js.download"></script>
+    <script type="text/javascript" src="./functions.js.download"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    var image_minus = './themes/original/img/b_minus.png';
+    var image_plus = './themes/original/img/b_plus.png';
+
+    // INIT PMA_setFrameSize
+    var onloadCnt = 0;
+    var onLoadHandler = window.onload;
+    var resizeHandler = window.onresize;
+    window.document.onresize  = resizeHandler;
+    window.onload = function() {
+        if (onloadCnt == 0) {
+            if (typeof(onLoadHandler) == "function") {
+                onLoadHandler();
+            }
+            if (typeof(PMA_setFrameSize) != 'undefined' && typeof(PMA_setFrameSize) == 'function') {
+                PMA_setFrameSize();
+            }
+            onloadCnt++;
+        }
+    };
+    window.onresize = function() {
+        if (typeof(resizeHandler) == "function") {
+            resizeHandler();
+        }
+        if (typeof(PMA_saveFrameSize) != 'undefined' && typeof(PMA_saveFrameSize) == 'function') {
+            PMA_saveFrameSize();
+        }
+    };
+    // ]]>
+    </script>
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+</head>
+
+<body id="body_leftFrame">
+<div id="pmalogo">
+<a href="http://172.16.123.2/phpmyadmin/main.php?token=f704935c31e690bec9852d57766d3a79" target="frame_content"><img src="./logo_left.png" alt="phpMyAdmin" id="imgpmalogo"></a>
+</div>
+<div id="leftframelinks">
+<a href="http://172.16.123.2/phpmyadmin/main.php?token=f704935c31e690bec9852d57766d3a79" title="Home"><img class="icon" src="./b_home.png" width="16" height="16" alt="Home"></a>
+<a href="http://172.16.123.2/phpmyadmin/querywindow.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79&amp;no_js=true" title="Query window" onclick="javascript:if (window.parent.open_querywindow()) return false;"><img class="icon" src="./b_selboard.png" width="16" height="16" alt="Query window"></a>
+    <a href="http://172.16.123.2/phpmyadmin/Documentation.html" target="documentation" title="phpMyAdmin documentation"><img class="icon" src="./b_docs.png" width="16" height="16" alt="phpMyAdmin documentation"></a>
+    <a href="http://dev.mysql.com/doc/refman/5.1/en/index.html" target="mysql_doc"><img class="icon" src="./b_sqlhelp.png" width="16" height="16" alt="Documentation" title="Documentation"></a>
+</div>
+
+    <div id="databaseList">
+    <form method="post" action="http://172.16.123.2/phpmyadmin/index.php" target="_parent" id="left">
+    <label for="lightm_db">Database</label>
+    <input type="hidden" name="token" value="f704935c31e690bec9852d57766d3a79">
+<select name="db" id="lightm_db" xml:lang="en" dir="ltr" onchange="if (this.value != &#39;&#39;) window.parent.openDb(this.value);">
+<option value="" dir="ltr">(Databases) ...</option>
+<option value="create-form" title="">create-form (1)</option>
+<optgroup label="create database school">
+<option value="create database school" title="">create database school</option>
+<option value="create database school_table" title="">_table</option>
+</optgroup>
+<option value="create database school;" title="">create database school;</option>
+<option value="create database schools" title="">create database schools (3)</option>
+<option value="create database simple_database" title="">create database simple_database</option>
+<option value="create database teacher" title="">create database teacher (1)</option>
+<option value="create hari" title="">create hari</option>
+<option value="createharish;" title="">createharish; (1)</option>
+<option value="cricket" title="">cricket</option>
+<option value="cricketclubmanagement" title="">cricketclubmanagement (1)</option>
+<option value="crime reporting system" title="">crime reporting system (1)</option>
+<option value="crimereportingsystem" title="">crimereportingsystem (1)</option>
+<option value="cristiano" title="">cristiano (1)</option>
+<option value="crm" title="">crm (5)</option>
+<option value="crud" title="">crud (1)</option>
+<option value="csdept" title="">csdept (5)</option>
+<option value="cyu" title="">cyu (1)</option>
+<option value="d" title="">d</option>
+<option value="dance_class" title="" selected="selected">dance_class (4)</option>
+<option value="dani" title="">dani (7)</option>
+<option value="daniel" title="">daniel (4)</option>
+<option value="dat" title="">dat</option>
+<option value="data 1" title="">data 1 (1)</option>
+<option value="data1" title="">data1 (1)</option>
+<option value="data2" title="">data2 (1)</option>
+<optgroup label="database">
+<option value="database" title="">database (1)</option>
+<option value="database_name" title="">_name</option>
+</optgroup>
+<option value="database1" title="">database1</option>
+<optgroup label="db">
+<option value="db" title="">db (1)</option>
+<option value="db_registration" title="">_registration (9)</option>
+<option value="db_reservation" title="">_reservation</option>
+</optgroup>
+<option value="db2" title="">db2</option>
+<option value="db3" title="">db3</option>
+<option value="dbcaiwl" title="">dbcaiwl (7)</option>
+<option value="dbconnect" title="">dbconnect (6)</option>
+<optgroup label="demo">
+<option value="demo" title="">demo</option>
+<option value="demo_20" title="">_20</option>
+<option value="demo_25" title="">_25 (1)</option>
+<option value="demo_26" title="">_26</option>
+<option value="demo_27" title="">_27 (3)</option>
+<option value="demo_28" title="">_28</option>
+<option value="demo_101" title="">_101 (1)</option>
+<option value="demo_105" title="">_105 (1)</option>
+<option value="demo_database" title="">_database</option>
+</optgroup>
+<option value="demo1" title="">demo1 (1)</option>
+<option value="demoallwin" title="">demoallwin</option>
+<option value="depevent" title="">depevent (3)</option>
+<option value="desi" title="">desi (4)</option>
+<option value="desk" title="">desk</option>
+<option value="developers" title="">developers (8)</option>
+<option value="df" title="">df (1)</option>
+<option value="dfo" title="">dfo</option>
+<option value="dfsms" title="">dfsms</option>
+<option value="dharmi" title="">dharmi</option>
+<option value="dharshan sql lab" title="">dharshan sql lab (1)</option>
+<option value="dhoni7" title="">dhoni7 (1)</option>
+<option value="digital_art" title="">digital_art (1)</option>
+<option value="diva" title="">diva</option>
+<option value="dml" title="">dml</option>
+<option value="doc_db" title="">doc_db (2)</option>
+<option value="doctor" title="">doctor (1)</option>
+<option value="documentdb" title="">documentdb (3)</option>
+<option value="dolphine" title="">dolphine (1)</option>
+<option value="donor" title="">donor (3)</option>
+<option value="driver2" title="">driver2 (6)</option>
+<option value="driving" title="">driving (6)</option>
+<option value="dropdatabase" title="">dropdatabase</option>
+<option value="droppy" title="">droppy (1)</option>
+<option value="drugdatabase" title="">drugdatabase (5)</option>
+<option value="ds_j" title="">ds_j (2)</option>
+<option value="dt" title="">dt (2)</option>
+<option value="ecommerce" title="">ecommerce (6)</option>
+<option value="ecommerceapp" title="">ecommerceapp (7)</option>
+<option value="elearning" title="">elearning (13)</option>
+<option value="elio_off_com_rem" title="">elio_off_com_rem (4)</option>
+<option value="emp" title="">emp (1)</option>
+<option value="emp14" title="">emp14 (1)</option>
+<option value="emplist" title="">emplist</option>
+<option value="employe" title="">employe</option>
+<option value=" employee" title=""> employee (1)</option>
+<optgroup label="employee">
+<option value="employee" title="">employee (1)</option>
+<option value="employee_management" title="">_management (1)</option>
+</optgroup>
+<option value="employees_databse" title="">employees_databse</option>
+<option value="employeetb" title="">employeetb</option>
+<option value="empolyee" title="">empolyee (1)</option>
+<option value="empp" title="">empp (1)</option>
+<optgroup label="event">
+<option value="event" title="">event (6)</option>
+<option value="event_management" title="">_management</option>
+</optgroup>
+<option value="eventmanagement" title="">eventmanagement</option>
+<option value="event management" title="">event management (2)</option>
+<option value="eventmgmt" title="">eventmgmt</option>
+<option value="events" title="">events</option>
+<option value="ewms" title="">ewms (1)</option>
+<option value="ewmsdb" title="">ewmsdb (10)</option>
+<option value="exampleproject" title="">exampleproject</option>
+<option value="exhibition" title="">exhibition (4)</option>
+<option value="f.php" title="">f.php</option>
+<optgroup label="farming">
+<option value="farming_assistance" title="">_assistance</option>
+<option value="farming_assistant" title="">_assistant</option>
+</optgroup>
+</select>
+<noscript>
+<input type="submit" name="Go" value="Go" />
+</noscript>
+</form>
+<div id="navidbpageselector">
+Page number:<br><a title="Begin" href="http://172.16.123.2/phpmyadmin/navigation.php?pos=0&amp;token=f704935c31e690bec9852d57766d3a79" target="frame_navigation">&lt;&lt;</a><a title="Previous" href="http://172.16.123.2/phpmyadmin/navigation.php?pos=200&amp;token=f704935c31e690bec9852d57766d3a79" target="frame_navigation"> &lt; </a>
+<form action="http://172.16.123.2/phpmyadmin/navigation.php" method="post" target="frame_navigation">
+<input type="hidden" name="pos" value="200"><input type="hidden" name="token" value="f704935c31e690bec9852d57766d3a79"> <select name="pos" onchange="goToUrl(this, &#39;navigation.php?pos=200&amp;token=f704935c31e690bec9852d57766d3a79&amp;&#39;);">
+                <option value="0">1</option>
+                <option value="100">2</option>
+                <option value="200">3</option>
+                <option selected="selected" style="font-weight: bold" value="300">4</option>
+                <option value="400">5</option>
+                <option value="500">6</option>
+                <option value="600">7</option>
+                <option value="700">8</option>
+                <option value="800">9</option>
+ </select><noscript><input type="submit" value="Go" /></noscript></form><a title="Next" href="http://172.16.123.2/phpmyadmin/navigation.php?pos=400&amp;token=f704935c31e690bec9852d57766d3a79" target="frame_navigation"> &gt; </a><a title="End" href="http://172.16.123.2/phpmyadmin/navigation.php?pos=800&amp;token=f704935c31e690bec9852d57766d3a79" target="frame_navigation">&gt;&gt;</a>
+</div>
+</div>
+
+<div id="left_tableList">
+    <p><a class="item" href="http://172.16.123.2/phpmyadmin/db_structure.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79" title="">
+    <span class="navi_dbName">dance_class</span> <bdo dir="ltr">(4)</bdo> </a></p><ul id="subel0"><li>
+<a title="Structure:  (3 Rows)" id="quick_dance_class.contact_messages" href="http://172.16.123.2/phpmyadmin/tbl_structure.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79&amp;table=contact_messages&amp;goto=tbl_structure.php"><img class="icon" src="./b_sbrowse.png" id="icon_dance_class.contact_messages" width="10" height="10" alt="Structure"></a>
+<a href="http://172.16.123.2/phpmyadmin/sql.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79&amp;table=contact_messages&amp;pos=0" title="Browse:  (3 Rows)" id="dance_class.contact_messages">contact_messages</a></li>
+<li class=" marked">
+<a title="Structure:  (4)" id="quick_dance_class.feedback" href="http://172.16.123.2/phpmyadmin/tbl_structure.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79&amp;table=feedback&amp;goto=tbl_structure.php"><img class="icon" src="./b_sbrowse.png" id="icon_dance_class.feedback" width="10" height="10" alt="Structure"></a>
+<a href="http://172.16.123.2/phpmyadmin/sql.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79&amp;table=feedback&amp;pos=0" title="Browse:  (4)" id="dance_class.feedback">feedback</a></li>
+<li class="">
+<a title="Structure:  (3)" id="quick_dance_class.packages" href="http://172.16.123.2/phpmyadmin/tbl_structure.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79&amp;table=packages&amp;goto=tbl_structure.php"><img class="icon" src="./b_sbrowse.png" id="icon_dance_class.packages" width="10" height="10" alt="Structure"></a>
+<a href="http://172.16.123.2/phpmyadmin/sql.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79&amp;table=packages&amp;pos=0" title="Browse:  (3)" id="dance_class.packages">packages</a></li>
+<li>
+<a title="Structure:  (4 Rows)" id="quick_dance_class.users" href="http://172.16.123.2/phpmyadmin/tbl_structure.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79&amp;table=users&amp;goto=tbl_structure.php"><img class="icon" src="./b_sbrowse.png" id="icon_dance_class.users" width="10" height="10" alt="Structure"></a>
+<a href="http://172.16.123.2/phpmyadmin/sql.php?db=dance_class&amp;token=f704935c31e690bec9852d57766d3a79&amp;table=users&amp;pos=0" title="Browse:  (4 Rows)" id="dance_class.users">users</a></li>
+</ul></div>
+</body></html>
